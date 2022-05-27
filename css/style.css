@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-decoration: none; */
+    list-style-type: none;
+}
+/* taille du prix barré */
+
+s{font-size: 20px;}
+
+
+/* debut du style header */
+header{
+    width: 100%;
+    background-color: #f3f3f3;
+}
+/* div de 2px pour creer une bordure degradee */
+.bordureHeader{
+    width: 4px;
+    height: auto;
+    background: linear-gradient(white,#ea9f06);
+}
+.contenuHeader{
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.topHeaderLogo h1{
+    font-size: 23px;
+}
+.topHeaderLogo{
+    margin-left: 10px;
+    padding-top: 50px;
+    width: 698px;
+}
+.ComptePanier{
+    display: flex;
+    border: solid 1px black;
+    padding: 5px;
+    margin-bottom: 15px;
+    background-color: lightgray;
+}
+.ComptePanier p{
+    padding: 15px;
+}
+.ComptePanier a{
+    text-decoration: none;
+    color: black;
+}
+.topHeaderNav{
+    text-align: end;
+    padding-left: 25px;
+    padding-top: 25px;
+    width: 698px;
+}
+.topHeaderNav img{
+    padding-left: 100px;
+}
+/* on place la liste en :horizontal */
+nav ul{
+    display: flex;
+}
+nav a{
+    padding-right: 5px;
+    text-decoration: none;
+    color: black;
+}
+.lien1, .lien2, .lien3{
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
+    height: 50px;
+    padding: 10px;
+    padding-top: 30px;
+    color: black;
+    text-decoration: none;
+}
+.nav1 a, .nav2 a, .nav3 a{
+    color: black;
+}
+.imageDuHeader img{
+    width: 100%;
+}
+/* fin du header  */
+/* debut du style de la section 1 */
+section{
+    width: 1400px;
+    margin: auto;
+    background-color: #f3f3f3;
+}
+.sect1{
+    background-color: #1c1c1c;
+}
+/* main en position relative par raport au prix discount sui sont en absolu */
+main{
+    width: 100%;
+    margin: auto;
+    background-color:  #1c1c1c ;
+    position: relative;
+}
+.block1{
+    width: 400px;
+    display: flex;
+}
+/* style de la legende sur la photo des gant */
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: auto;
+    box-shadow: -1px 2px 8px 5px grey;
+}
+figcaption {
+    background-color: white;
+    color: black;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+.promo{
+    position: absolute;
+    right: -20px;
+    top: 30px;
+    border: solid 8px rgba(239, 5, 52, 0.307);
+    width: 80px;
+    height: 40px;
+    font-size: 25px;
+    color: #ea9f06;
+    background-color: black;
+}
+/* bouton voir la vente */
+button{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 30px;
+}
+.prix65{
+    color: #ea9f06;
+}
+.bordure{
+    width: 175px;
+    display: flex;
+    justify-content: space-between;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to left, black, rgba(0, 0, 0, 0)) 0 1 100%;
+    padding-bottom: 5px;
+}
+.sect2Image{
+    padding: 10px;
+    margin-left: 210px;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.vente{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.topSect2Bottom{
+    padding-bottom: 100px;
+}
+.barreGrise{
+    background-color: grey;
+    width: 100%;
+    min-height: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+.contenuSect3{
+    position: relative;
+}
+.quiSommeNous{
+    border: solid 1px black;
+    width: 500px;
+    margin: auto;
+    height: 60px;
+    position: absolute;
+    left: 450px;
+    top: -21px;
+    background-color: white;
+    border-radius: 3px 3px 10px 10px
+}
+.quiSommeNous ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.quiSommeNous a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    background-color: #373737;
+    color: white;
+}
+footer p{
+    text-align:center;
+    padding-bottom: 20px;
+}
+.contenuFooter{
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logoFooter1, .logoFooter2, .logoFooter3, .logoFooter4{
+    text-align: center;
+    padding: 0px 40px;
+    padding-top: 80px;
+}
+hr{
+    width: 600px;
+    margin: auto;
+    margin-top: 25px;
+}
+.iconFooter{
+    text-align: center;
+}
+.iconFooter img{
+    margin: 50px;
+    width: 40px;
+    height: 40px;
+}
+/* @media screen and (max-width: 1399.99px) {
+    .contenuHeader{
+        width: 100%;
+    }
+    .contenuFooter{
+        width: 100%;
+    }
+  } */
